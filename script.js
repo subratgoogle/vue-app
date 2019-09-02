@@ -6,3 +6,24 @@ new Vue({
         about: "front End developer"
     }
 });
+var myapp = new Vue({
+
+    el: "#my-app",
+    data:{
+        name: "Subrat kumar soni",
+        playlist: "frontend developer"
+
+    },
+    methods: {
+        run: function(message){
+            return  "I am subrat"+message;
+        },
+        welcome: function(dayTime){
+            return "Good"+ dayTime;
+        },
+        valueAccess: function(){
+            return this.name+" "+this.playlist;
+        }
+    }
+
+});
